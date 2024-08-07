@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(120, 120, 250);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .logo h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav .links {
+    margin-top: 7px;
+}
+
+nav .links a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+}
+
+nav .links a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0px;
+    background-color: aqua;
+    transition: 0.3s;
+}
+
+nav .links a:hover::before {
+    width: 100%;
+}
+
+main {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .heading {
+    width: 50%;
+    color: #fff;
+}
+
+.content .heading h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content .heading p {
+    font-size: 1.5rem;
+}
+
+.content .heading .buttons {
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+.heading .buttons button {
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.buttons button:nth-child(1) {
+    background-color: darkturquoise;
+}
+
+.buttons button:nth-child(2) {
+    background-color: darkturquoise;
+}
+
+.buttons button:hover {
+    scale: 0.95;
+}
+
+section .content .image img {
+    width: 500px;
+}
